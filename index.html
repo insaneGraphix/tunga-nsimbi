@@ -789,17 +789,7 @@ let state = {
   cloudConfig: { apiKey: "$2a$10$MgZ1fftyzOwQs9mLh7bV5OoHaxGH0znaTEP5l0oxmyHhDiRkT.i3G", binId: "" }
 };
 
-// ---------- seed example data ----------
-state.clients.push({id:1, name:"Kansanshi Mine Services", phone:"", email:"", address:"", notes:""});
-state.jobs.push({id:1, jobNo:"J-0001", date:"2026-09-01", client:"Kansanshi Mine Services",
-  desc:"Repair of conveyor support frame", service:"Repairs & Maintenance", status:"In Progress",
-  assigned:"B. Mwansa", start:"2026-09-02", end:"", amount:8500, outcome:""});
-state.invoices.push({id:1, invNo:"INV-0001", date:"2026-09-05", jobId:1, client:"Kansanshi Mine Services",
-  items:[{desc:"Repair of conveyor support frame — labour & materials", qty:1, price:8500}],
-  tax:16, subtotal:8500, total:9860, due:"2026-09-19", status:"Sent"});
-state.receipts.push({id:1, rctNo:"RCT-0001", date:"2026-09-20", invId:1, client:"Kansanshi Mine Services",
-  invTotal:9860, amount:9860, method:"Bank Transfer", notes:"Paid in full"});
-state.counters = { job: 2, invoice: 2, receipt: 2, client: 2 };
+// ---------- (no example data — starts blank) ----------
 
 const STATUS_COLORS = {
   "Quoted":"#8A8F94","In Progress":"#F2B705","Completed":"#2D6E8C","Invoiced":"#6C4AB6","Paid":"#2E8B57",
